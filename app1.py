@@ -2,7 +2,7 @@ import numpy as np
 import os
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-from flask import Flask, request, render_template, jsonify,session,redirect,g,url_for
+from flask import Flask, request, render_template, jsonify,session,redirect,url_for
 import os
 
 app = Flask(__name__, static_folder='static')
