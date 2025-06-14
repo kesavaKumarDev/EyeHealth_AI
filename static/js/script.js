@@ -16,14 +16,6 @@ accordions.forEach(accordion => {
     });
 });
 
-// let profilePic = document.getElementById("profile-pic");
-// // let inputFile = document.getElementById("imageUpload");
-// let inputFile = document.getElementById("upload-file");
-
-
-// inputFile.onchange = function () {
-//     profilePic.src = URL.createObjectURL(inputFile.files[0]);
-// }
 $(document).ready(function () {
     $('.loader').hide();
     $('#result').hide();
@@ -66,19 +58,3 @@ $(document).ready(function () {
         });
     });
 });
-
-
-
-function login() {
-    var username = $("#username").val();
-    var password = $("#password").val();
-
-    $.post("login.php", { username: username, password: password }, function (data) {
-        if (data === "success") {
-            alert("Login successful");
-            window.location.href = "index.html"; // Redirect to index.html
-        } else {
-            alert("Login failed: " + data);
-        }
-    });
-}
